@@ -1,2 +1,2 @@
 # tdjsa
-Code from the book, "Test-driven JavaScript Applications"
+Code from the book, "Test Driving JavaScript Applications."
