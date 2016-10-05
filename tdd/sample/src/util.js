@@ -1,5 +1,7 @@
 module.exports = function() {
     this.f2c = function(degreesFahrenheit) {
-        return 0;
+        var result = (degreesFahrenheit - 32) * 5 / 9;
+
+		return result;
     };
 };

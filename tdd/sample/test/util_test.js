@@ -16,6 +16,10 @@ describe('util tests', function() {
 	it('should return 0 Celsius when converting 32 Farhrenheit', function() {
         var util = new Util();
 	    expect(util.f2c(32)).to.eql(0);	
-	})
+	});
+	it('should return 100 Celsius when converting 212 Farhrenheit', function() {
+        var util = new Util();
+	    expect(util.f2c(212)).to.eql(100);	
+	});
 });
 
