@@ -3,6 +3,7 @@
 // Use the `expect` property of that module to verify assertions.
 //
 var expect = require('chai').expect;
+var Util = require('../src/util');
 
 // The `describe` function defines a test suite. The first argument defines the name of the suite (used by mere mortals to 
 // identify the suite). The second argument is a function that contains all the tests in the suite.
@@ -13,10 +14,8 @@ describe('util tests', function() {
 		expect(true).to.eql(true);
 	});
 	it('should return 0 Celsius when converting 32 Farhrenheit', function() {
-	    expect(f2c(32)).to.eql(0);	
+        var util = new Util();
+	    expect(util.f2c(32)).to.eql(0);	
 	})
 });
 
-function f2c(degreesFahrenheit) {
-    return 0;
-};
