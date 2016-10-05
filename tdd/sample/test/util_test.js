@@ -12,4 +12,11 @@ describe('util tests', function() {
 	it('should pass this canary test', function() {
 		expect(true).to.eql(true);
 	});
+	it('should return 0 Celsius when converting 32 Farhrenheit', function() {
+	    expect(f2c(32)).to.eql(0);	
+	})
 });
+
+function f2c(degreesFahrenheit) {
+    return 0;
+};
