@@ -1,10 +1,6 @@
 /*
  * Test ideas
  *
- * 'dad' is a palindrome
- * 'dude' is not a palindrome
- * 'mom mom' is a palindrome
- * 'dad dae' is a palindrome'
  */
 
 var expect = require('chai').expect;
@@ -25,5 +21,13 @@ describe('palindrome-test', function() {
 
 	it('should return false when passed "dude"', function() {
 		expect(isPalindrome('dude')).to.be.false;
+	});
+
+	it('should return true when passed "mom mom"', function() {
+		expect(isPalindrome('mom mom')).to.be.true;
+	});
+
+	it('should return false when passed "dad dae"', function() {
+		expect(isPalindrome('dad dae')).to.be.false;
 	});
 });
