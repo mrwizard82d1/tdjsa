@@ -1,6 +1,8 @@
 /*
  * Test ideas
  *
+ * Mixed case string: 'Madam' is a palindrome
+ * Puncuation ignored: 'Madam, I'm Adam' is a palindrome
  */
 
 var expect = require('chai').expect;
@@ -30,4 +32,9 @@ describe('palindrome-test', function() {
 	it('should return false when passed "dad dae"', function() {
 		expect(isPalindrome('dad dae')).to.be.false;
 	});
+
+	it('should return true when passed "Madam"', function() {
+		expect(isPalindrome('Madam')).to.be.true;
+	});
+
 });
