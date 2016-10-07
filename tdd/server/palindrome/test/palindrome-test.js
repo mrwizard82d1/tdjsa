@@ -22,4 +22,8 @@ describe('palindrome-test', function() {
 	it('should return true when passed "dad"', function() {
 		expect(isPalindrome('dad')).to.be.true;
 	});
+
+	it('should return false when passed "dude"', function() {
+		expect(isPalindrome('dude')).to.be.false;
+	});
 });
