@@ -41,4 +41,7 @@ describe('palindrome-test', function() {
 		expect(isPalindrome("Madam, I'm Adam.")).to.be.true;
 	});
 
+	it('should throw an `InvalidArgumentException` if supplied no argument.', function() {
+		expect(isPalindrome).to.throw(Error, 'Invalid argument');
+	});
 });
