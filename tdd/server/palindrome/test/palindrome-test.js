@@ -37,4 +37,8 @@ describe('palindrome-test', function() {
 		expect(isPalindrome('Madam')).to.be.true;
 	});
 
+	it('should return true when passed "Madam, I\'m Adam."', function() {
+		expect(isPalindrome("Madam, I'm Adam.")).to.be.true;
+	});
+
 });
