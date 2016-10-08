@@ -1,3 +1,3 @@
 var isPalindrome = function(phrase) {
-	return true;
+	return phrase.split('').reverse().join('') === phrase;
 };
