@@ -7,7 +7,7 @@ describe('test server-side callback', function() {
 		// The test "works," but since it expects a **negative count**
 		// (not exactly plausible).
 		var callback = function(count) {
-			expect(count).to.be.eql(-2319);
+			expect(count).to.be.eql(15);
 		};
 
 		linesCount('src/files.js', callback);
