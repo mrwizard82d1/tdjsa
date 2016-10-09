@@ -31,12 +31,16 @@ describe('palindrome-client-tests', function(){
 		expect(isPalindrome('')).to.be.false;
 	});
 
-	it('should throw an exception if no argument is supplied', function() {
-		expect(isPalindrome).to.throw(Error, 'Invalid argument');
-	});
-
 	it('should return true for "Madam"', function() {
 		expect(isPalindrome('Madam')).to.be.true;
+	});
+
+	it('should return true for "Madam, I\'m Adam."', function() {
+		expect(isPalindrome("Madam, I'm Adam.")).to.be.true;
+	});
+
+	it('should throw an exception if no argument is supplied', function() {
+		expect(isPalindrome).to.throw(Error, 'Invalid argument');
 	});
 
 });
