@@ -34,4 +34,9 @@ describe('palindrome-client-tests', function(){
 	it('should throw an exception if no argument is supplied', function() {
 		expect(isPalindrome).to.throw(Error, 'Invalid argument');
 	});
+
+	it('should return true for "Madam"', function() {
+		expect(isPalindrome('Madam')).to.be.true;
+	});
+
 });

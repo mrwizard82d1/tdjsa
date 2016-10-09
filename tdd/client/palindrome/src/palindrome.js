@@ -9,5 +9,5 @@ var isPalindrome = function(phrase) {
 		return false;
 	}
 
-	return phrase.split('').reverse().join('') === phrase;
+	return phrase.toLowerCase().split('').reverse().join('') === phrase.toLowerCase();
 };
