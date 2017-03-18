@@ -51,5 +51,12 @@ describe('util tests', function() {
 		expect(actualC).to.closeTo(0.5555, 0.0001);
 	});
 
+	it('should raise a `TypeError` for non-numeric arguments', function() {
+		var wrapper = function() {
+			util.f2c('lorem');
+		};
+		expect(wrapper).to.throw(TypeError, /Argument, <.*>, is not a number/);
+	});
+
 });
 
