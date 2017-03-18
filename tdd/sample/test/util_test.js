@@ -43,5 +43,13 @@ describe('util tests', function() {
 		expect(actualC).to.eql(100);
 	});
 
+	it('should return 0.5555C for 33F', function() {
+		var temperatureF = 33;
+
+		var actualC = util.f2c(temperatureF);
+
+		expect(actualC).to.closeTo(0.5555, 0.0001);
+	});
+
 });
 
