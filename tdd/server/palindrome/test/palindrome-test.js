@@ -58,20 +58,20 @@ describe("palindrome", function() {
 		expect(actualResult).to.be.false;
 	});
 
-	it("should return true for ''", function() {
+	it("should return false for ''", function() {
 		var toTest = "";
 
 		actualResult = isPalindrome(toTest);
 
-		expect(actualResult).to.be.true;
+		expect(actualResult).to.be.false;
 	});
 
-	it("should return true for '  '", function() {
+	it("should return false for '  '", function() {
 		var toTest = "  ";
 
 		actualResult = isPalindrome(toTest);
 
-		expect(actualResult).to.be.true;
+		expect(actualResult).to.be.false;
 	});
 
 	it("should return true for ' mom mom'", function() {
