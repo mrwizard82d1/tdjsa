@@ -1,6 +1,17 @@
 var expect = require("chai").expect;
 var isPalindrome = require("../src/palindrome");
 
+/*
+ * Test ideas
+ * 'mom mom' is a palindrome
+ * 'mom mon' is not a palindrome
+ * '' is not a palindrome
+ * '  ' is not a palindrome
+ * ' mom mom' is a palindrome
+ * ' mom mom ' is a palindrome
+ * 'mom  mom' is a palindrome
+ */
+
 describe("palindrome", function() {
 	it("should pass this canary test", function() {
 		expect(true).to.be.true;

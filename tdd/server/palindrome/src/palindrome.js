@@ -1,4 +1,4 @@
-module.exports = function(wordToTest) {
-	var reversedWordToTest = wordToTest.split('').reverse().join('');
-	return wordToTest == reversedWordToTest;
+module.exports = function(phraseToTest) {
+	var reversedWordToTest = phraseToTest.split('').reverse().join('');
+	return phraseToTest == reversedWordToTest;
 };
