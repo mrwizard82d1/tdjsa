@@ -58,5 +58,12 @@ describe('util tests', function() {
 		expect(wrapper).to.throw(TypeError, /Argument, <.*>, is not a number/);
 	});
 
+	it('should raise a `TypeError` for `NaN` arguments', function() {
+		var wrapper = function() {
+			util.f2c(NaN);
+		};
+		expect(wrapper).to.throw(TypeError, /Argument, <.*>, is not a number/);
+	});
+
 });
 
