@@ -18,5 +18,13 @@ describe('util tests', function() {
 
 		expect(actualC).to.eql(0);
 	});
+
+	it('should return 10C for 50', function() {
+		var temperatureF = 50;
+
+		var actualC = util.f2c(temperatureF);
+
+		expect(actualC).to.eql(10);
+	});
 });
 
