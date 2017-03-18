@@ -3,14 +3,6 @@ var isPalindrome = require("../src/palindrome");
 
 /*
  * Test ideas
- * 'maam' is a palindrome
- * 'mom mom' is a palindrome
- * 'mom mon' is not a palindrome
- * '' is not a palindrome
- * '  ' is not a palindrome
- * ' mom mom' is a palindrome
- * ' mom mom ' is a palindrome
- * 'mom  mom' is a palindrome
  */
 
 describe("palindrome", function() {
@@ -76,6 +68,22 @@ describe("palindrome", function() {
 
 	it("should return true for '  '", function() {
 		var toTest = "  ";
+
+		actualResult = isPalindrome(toTest);
+
+		expect(actualResult).to.be.true;
+	});
+
+	it("should return true for ' mom mom'", function() {
+		var toTest = " mom mom";
+
+		actualResult = isPalindrome(toTest);
+
+		expect(actualResult).to.be.true;
+	});
+
+	it("should return true for ' mom mom  '", function() {
+		var toTest = " mom mom";
 
 		actualResult = isPalindrome(toTest);
 
