@@ -3,7 +3,8 @@ var isPalindrome = require("../src/palindrome");
 
 /*
  * Test ideas
- * "ma'am" is not a palindrome
+ * No arguments throws exception
+ * More than one argument throws exception
  */
 
 describe("palindrome", function() {
@@ -97,6 +98,30 @@ describe("palindrome", function() {
 		actualResult = isPalindrome(toTest);
 
 		expect(actualResult).to.be.false;
+	});
+
+	it("should throw `TypeError` if passed no arguments", function() {
+		var testWrapper = function() {
+			isPalindrome();
+		};
+
+		expect(testWrapper).to.throw(TypeError, /Argument required/);
+	});
+
+	it("should throw `TypeError` if passed more than one argument", function() {
+		var testWrapper = function() {
+			isPalindrome("mom", "madam");
+		};
+
+		expect(testWrapper).to.throw(TypeError, /Exactly one argument required/);
+	});
+
+	it("should throw `TypeError` if passed non-string argument", function() {
+		var testWrapper = function() {
+			isPalindrome({});
+		};
+
+		expect(testWrapper).to.throw(TypeError, /String argument required/);
 	});
 
 });
