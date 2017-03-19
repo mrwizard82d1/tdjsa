@@ -1,3 +1,11 @@
-var isPalindrome = function(wordToTest) {	
-	return wordToTest.split('').reverse().join('') == wordToTest;
+var isPalindrome = function(phraseToTest) {
+	var hasContent = function(phraseToTest) {
+		return phraseToTest && phraseToTest.trim();
+	};
+
+	if (! hasContent(phraseToTest)) {
+		return false;
+	}
+
+	return phraseToTest.split('').reverse().join('') == phraseToTest;
 };

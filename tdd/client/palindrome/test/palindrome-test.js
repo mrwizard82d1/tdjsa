@@ -43,5 +43,21 @@ describe("palindrome", function() {
 		expect(actualResult).to.be.false;
 	});
 
+	it("should return false for ''", function() {
+		var toTest = "";
+
+		var actualResult = isPalindrome(toTest);
+
+		expect(actualResult).to.be.false;
+	});
+
+	it("should return false for '  '", function() {
+		var toTest = "  ";
+
+		var actualResult = isPalindrome(toTest);
+
+		expect(actualResult).to.be.false;
+	});
+
 });
 
