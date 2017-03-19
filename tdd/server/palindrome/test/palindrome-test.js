@@ -3,6 +3,7 @@ var isPalindrome = require("../src/palindrome");
 
 /*
  * Test ideas
+ * "ma'am" is not a palindrome
  */
 
 describe("palindrome", function() {
@@ -88,6 +89,14 @@ describe("palindrome", function() {
 		actualResult = isPalindrome(toTest);
 
 		expect(actualResult).to.be.true;
+	});
+
+	it("should return false for 'ma'am'", function() {
+		var toTest = "ma'am";
+
+		actualResult = isPalindrome(toTest);
+
+		expect(actualResult).to.be.false;
 	});
 
 });
