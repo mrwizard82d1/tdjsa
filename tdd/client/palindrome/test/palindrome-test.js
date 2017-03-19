@@ -11,8 +11,8 @@ describe("palindrome", function() {
 		expect(actualResult).to.be.true;
 	});
 
-	it("should return true for 'dad'", function() {
-		var toTest = "dad";
+	it("should return true for 'Dad'", function() {
+		var toTest = "Dad";
 
 		var actualResult = isPalindrome(toTest);
 

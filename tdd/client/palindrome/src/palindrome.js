@@ -7,5 +7,5 @@ var isPalindrome = function(phraseToTest) {
 		return false;
 	}
 
-	return phraseToTest.split('').reverse().join('') == phraseToTest;
+	return phraseToTest.split('').reverse().join('').toLowerCase() == phraseToTest.toLowerCase();
 };
