@@ -2,5 +2,7 @@
 **/node_modules/
 
 # Ignore public libraries
-**/public/
+**/public/javascripts/angular.js
+**/public/javascripts/angular.min.js
+**/public/javascripts/jquery-*.js
 
